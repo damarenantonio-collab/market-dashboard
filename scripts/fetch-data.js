@@ -3,7 +3,7 @@
 //
 // Séries SGS usadas (https://www3.bcb.gov.br/sgspub/localizarseries):
 //   432   Meta Selic definida pelo Copom (% a.a.)
-//   4391  Taxa de juros - CDI anualizada base 252 (% a.a.)
+//   12    Taxa de juros - CDI, diária (% a.d.) — anualizada aqui (base 252) para comparar com a Selic
 //   13522 IPCA - acumulado em 12 meses (%)
 //   189   IGP-M - variação mensal (%)
 //   188   INPC - variação mensal (%)
@@ -21,7 +21,7 @@ const DATA_PATH = path.join(__dirname, "..", "data", "latest.json");
 // de intervalo de datas (dataInicial/dataFinal) abaixo.
 const INDICATORS = [
   { key: "selic", name: "Selic", code: 432, unit: "% a.a.", history: 1095 },
-  { key: "cdi", name: "CDI Anual", code: 4391, unit: "% a.a.", history: 1095 },
+  { key: "cdi", name: "CDI Anual", code: 12, unit: "% a.a.", history: 1095, annualizeFromDaily: true },
   { key: "ipca12", name: "IPCA 12M", code: 13522, unit: "%", history: 1825 },
   { key: "igpm", name: "IGP-M", code: 189, unit: "%", history: 1825 },
   { key: "inpc", name: "INPC", code: 188, unit: "%", history: 1825 },
@@ -68,9 +68,15 @@ async function fetchIndicator(indicator) {
     throw new Error(`Série ${indicator.code} veio vazia`);
   }
 
+  // Converte a taxa diária do CDI (% a.d.) para anualizada base 252,
+  // no mesmo formato da Selic, para os dois ficarem comparáveis no gráfico.
+  const toValue = indicator.annualizeFromDaily
+    ? (v) => Number(((Math.pow(1 + v / 100, 252) - 1) * 100).toFixed(2))
+    : (v) => v;
+
   const series = raw.map((point) => ({
     date: toIsoDate(point.data),
-    value: Number(point.valor),
+    value: toValue(Number(point.valor)),
   }));
 
   const last = series[series.length - 1];
