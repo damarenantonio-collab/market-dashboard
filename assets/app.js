@@ -155,6 +155,7 @@ function renderLegend(container, series) {
 // { type: "all" } | { type: "preset", months: N } | { type: "custom", start: "aaaa-mm-dd", end: "aaaa-mm-dd" }
 let selectedRange = { type: "all" };
 let cachedData = null;
+let cachedNtnb = null;
 
 function filterPoints(points, range) {
   if (!range || range.type === "all") return points;
@@ -176,6 +177,14 @@ async function loadDashboard() {
     const res = await fetch("data/latest.json", { cache: "no-store" });
     if (!res.ok) throw new Error("Não foi possível carregar data/latest.json");
     cachedData = await res.json();
+  }
+  if (!cachedNtnb) {
+    try {
+      const res = await fetch("data/ntnb.json", { cache: "no-store" });
+      cachedNtnb = res.ok ? await res.json() : { bonds: {}, notes: [] };
+    } catch {
+      cachedNtnb = { bonds: {}, notes: [] };
+    }
   }
   const data = cachedData;
   const ind = data.indicators;
@@ -217,6 +226,36 @@ function renderCharts() {
       { height: 200 }
     );
   }
+
+  renderNtnbChart();
+}
+
+function renderNtnbChart() {
+  const chartEl = document.getElementById("ntnb-chart");
+  const noteEl = document.getElementById("ntnb-note");
+  if (!chartEl || !cachedNtnb) return;
+
+  const bonds = cachedNtnb.bonds || {};
+  const ntnbSeries = Object.values(bonds)
+    .map((b, i) => ({
+      name: `${b.name} (venc. ${dateFmt(b.maturity)})`,
+      color: SERIES_COLORS[i],
+      points: filterPoints(
+        b.series.map((p) => ({ date: p.date, value: p.taxaVenda })),
+        selectedRange
+      ),
+    }))
+    .filter((s) => s.points.length > 0);
+
+  renderLegend(document.getElementById("ntnb-legend"), ntnbSeries);
+
+  if (ntnbSeries.length === 0) {
+    chartEl.innerHTML = `<div class="error-note">Sem dados de NTN-B disponíveis ainda.</div>`;
+  } else {
+    drawLineChart(chartEl, ntnbSeries, { height: 260 });
+  }
+
+  noteEl.textContent = (cachedNtnb.notes || []).join(" ");
 }
 
 // Busca de ticker via brapi.dev (API pública de cotações B3).
