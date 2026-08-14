@@ -38,9 +38,15 @@ function toIsoDate(brDate) {
 }
 
 async function fetchIndicator(indicator) {
-  const res = await fetch(sgsUrl(indicator.code, indicator.history));
+  const res = await fetch(sgsUrl(indicator.code, indicator.history), {
+    headers: {
+      Accept: "application/json",
+      "User-Agent": "Mozilla/5.0 (compatible; market-dashboard/1.0; +https://github.com/damarenantonio-collab/market-dashboard)",
+    },
+  });
   if (!res.ok) {
-    throw new Error(`HTTP ${res.status} para série ${indicator.code}`);
+    const body = await res.text().catch(() => "");
+    throw new Error(`HTTP ${res.status} para série ${indicator.code}${body ? ` — ${body.slice(0, 200)}` : ""}`);
   }
   const raw = await res.json();
   if (!Array.isArray(raw) || raw.length === 0) {
