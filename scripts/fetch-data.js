@@ -16,19 +16,34 @@ const path = require("path");
 
 const DATA_PATH = path.join(__dirname, "..", "data", "latest.json");
 
+// `history` é em dias corridos (janela para dataInicial); o endpoint
+// /dados/ultimos/N é limitado a N=20 pela API, por isso usamos o endpoint
+// de intervalo de datas (dataInicial/dataFinal) abaixo.
 const INDICATORS = [
-  { key: "selic", name: "Selic", code: 432, unit: "% a.a.", history: 60 },
-  { key: "cdi", name: "CDI Anual", code: 4391, unit: "% a.a.", history: 60 },
-  { key: "ipca12", name: "IPCA 12M", code: 13522, unit: "%", history: 60 },
-  { key: "igpm", name: "IGP-M", code: 189, unit: "%", history: 60 },
-  { key: "inpc", name: "INPC", code: 188, unit: "%", history: 60 },
-  { key: "ibcbr", name: "IBC-Br", code: 24363, unit: "índice", history: 60 },
-  { key: "desemprego", name: "Desemprego", code: 24369, unit: "%", history: 36 },
-  { key: "dolar", name: "Cotação do dólar", code: 1, unit: "R$", history: 90 },
+  { key: "selic", name: "Selic", code: 432, unit: "% a.a.", history: 1095 },
+  { key: "cdi", name: "CDI Anual", code: 4391, unit: "% a.a.", history: 1095 },
+  { key: "ipca12", name: "IPCA 12M", code: 13522, unit: "%", history: 1825 },
+  { key: "igpm", name: "IGP-M", code: 189, unit: "%", history: 1825 },
+  { key: "inpc", name: "INPC", code: 188, unit: "%", history: 1825 },
+  { key: "ibcbr", name: "IBC-Br", code: 24363, unit: "índice", history: 1825 },
+  { key: "desemprego", name: "Desemprego", code: 24369, unit: "%", history: 1825 },
+  { key: "dolar", name: "Cotação do dólar", code: 1, unit: "R$", history: 1095 },
 ];
 
-function sgsUrl(code, n) {
-  return `https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados/ultimos/${n}?formato=json`;
+function toBrDate(date) {
+  const d = String(date.getDate()).padStart(2, "0");
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const y = date.getFullYear();
+  return `${d}/${m}/${y}`;
+}
+
+function sgsUrl(code, historyDays) {
+  const today = new Date();
+  const start = new Date(today);
+  start.setDate(start.getDate() - historyDays);
+  const dataInicial = toBrDate(start);
+  const dataFinal = toBrDate(today);
+  return `https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados?dataInicial=${dataInicial}&dataFinal=${dataFinal}&formato=json`;
 }
 
 // Datas do SGS vêm como "dd/mm/aaaa"; convertemos para "aaaa-mm-dd" (ordenável e ISO-friendly).
