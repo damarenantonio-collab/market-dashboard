@@ -24,7 +24,10 @@
     <h2 class="page-title">Visão Geral</h2>
     <div id="updated-at" class="updated">Carregando...</div>
 
-    <div id="tiles" class="grid-tiles"></div>
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab-btn active" data-tab="indicadores" role="tab" aria-selected="true">Indicadores</button>
+      <button type="button" class="tab-btn" data-tab="renda-fixa" role="tab" aria-selected="false">Renda Fixa</button>
+    </div>
 
     <div class="range-filter">
       <div class="range-presets">
@@ -41,42 +44,48 @@
       </form>
     </div>
 
-    <div class="charts-grid">
-      <div class="card">
-        <h3>Inflação e Juros</h3>
-        <div class="subtitle">IPCA 12M, IGP-M e Selic</div>
-        <div id="infl-legend" class="legend"></div>
-        <div class="chart-box">
-          <div id="infl-chart"></div>
-        </div>
-      </div>
+    <div class="tab-panel" data-tab-panel="indicadores">
+      <div id="tiles" class="grid-tiles"></div>
 
-      <div>
+      <div class="charts-grid">
         <div class="card">
-          <h3>Atividade Econômica</h3>
-          <div class="subtitle">IBC-Br</div>
+          <h3>Inflação e Juros</h3>
+          <div class="subtitle">IPCA 12M, IGP-M e Selic</div>
+          <div id="infl-legend" class="legend"></div>
           <div class="chart-box">
-            <div id="ibc-chart"></div>
+            <div id="infl-chart"></div>
           </div>
         </div>
-        <div class="card">
-          <h3>Desemprego</h3>
-          <div class="subtitle">Taxa de desocupação (PNAD Contínua)</div>
-          <div class="chart-box">
-            <div id="desemprego-chart"></div>
+
+        <div>
+          <div class="card">
+            <h3>Atividade Econômica</h3>
+            <div class="subtitle">IBC-Br</div>
+            <div class="chart-box">
+              <div id="ibc-chart"></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Desemprego</h3>
+            <div class="subtitle">Taxa de desocupação (PNAD Contínua)</div>
+            <div class="chart-box">
+              <div id="desemprego-chart"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <h3>NTN-B (Tesouro IPCA+)</h3>
-      <div class="subtitle">Taxa de venda — histórico completo desde o início de cada título</div>
-      <div id="ntnb-legend" class="legend"></div>
-      <div class="chart-box">
-        <div id="ntnb-chart"></div>
+    <div class="tab-panel" data-tab-panel="renda-fixa" hidden>
+      <div class="card">
+        <h3>NTN-B (Tesouro IPCA+)</h3>
+        <div class="subtitle">Taxa de venda — histórico completo desde o início de cada título</div>
+        <div id="ntnb-legend" class="legend"></div>
+        <div class="chart-box">
+          <div id="ntnb-chart"></div>
+        </div>
+        <div id="ntnb-note" class="subtitle" style="margin-top:8px;"></div>
       </div>
-      <div id="ntnb-note" class="subtitle" style="margin-top:8px;"></div>
     </div>
 
     <details style="margin-top: 8px;">

@@ -297,6 +297,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (value) searchTicker(value);
   });
 
+  document.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tab = btn.dataset.tab;
+      document.querySelectorAll(".tab-btn").forEach((b) => {
+        b.classList.toggle("active", b === btn);
+        b.setAttribute("aria-selected", b === btn ? "true" : "false");
+      });
+      document.querySelectorAll(".tab-panel").forEach((panel) => {
+        panel.hidden = panel.dataset.tabPanel !== tab;
+      });
+      // Gráficos numa aba escondida são desenhados com largura de fallback;
+      // redesenha ao trocar de aba para pegar o tamanho real do container.
+      renderCharts();
+    });
+  });
+
   document.querySelectorAll(".range-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const months = btn.dataset.months;

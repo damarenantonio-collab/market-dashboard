@@ -185,6 +185,38 @@ h2.page-title {
   color: var(--text-muted);
 }
 
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  padding: 8px 4px;
+  margin-right: 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--series-1);
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
 .range-filter {
   display: flex;
   flex-wrap: wrap;
