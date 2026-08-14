@@ -45,6 +45,10 @@ function drawLineChart(container, series, { height = 260 } = {}) {
   const innerH = height - padding.top - padding.bottom;
 
   const allDates = [...new Set(series.flatMap((s) => s.points.map((p) => p.date)))].sort();
+  if (allDates.length === 0) {
+    container.innerHTML = `<div class="error-note">Sem dados no período selecionado.</div>`;
+    return;
+  }
   const allValues = series.flatMap((s) => s.points.map((p) => p.value));
   const minV = Math.min(...allValues);
   const maxV = Math.max(...allValues);
@@ -147,7 +151,25 @@ function renderLegend(container, series) {
     .join("");
 }
 
+// Janela de tempo aplicada aos gráficos (não afeta os cards, que sempre mostram o valor mais recente).
+// { type: "all" } | { type: "preset", months: N } | { type: "custom", start: "aaaa-mm-dd", end: "aaaa-mm-dd" }
+let selectedRange = { type: "all" };
 let cachedData = null;
+
+function filterPoints(points, range) {
+  if (!range || range.type === "all") return points;
+  if (range.type === "preset") {
+    const cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - range.months);
+    const cutoffIso = cutoff.toISOString().slice(0, 10);
+    return points.filter((p) => p.date >= cutoffIso);
+  }
+  if (range.type === "custom") {
+    const { start, end } = range;
+    return points.filter((p) => (!start || p.date >= start) && (!end || p.date <= end));
+  }
+  return points;
+}
 
 async function loadDashboard() {
   if (!cachedData) {
@@ -160,17 +182,23 @@ async function loadDashboard() {
 
   document.getElementById("updated-at").textContent = `Atualizado em ${new Date(data.updatedAt).toLocaleString("pt-BR")}`;
 
-  const tileOrder = ["selic", "cdi", "ipca12", "igpm", "inpc", "ibcbr", "desemprego", "dolar"];
+  const tileOrder = ["selic", "cdi", "ipca12", "igpm", "ibcbr", "desemprego", "dolar"];
   document.getElementById("tiles").innerHTML = tileOrder.map((k) => renderTile(ind[k])).join("");
+
+  renderCharts();
+}
+
+function renderCharts() {
+  if (!cachedData) return;
+  const ind = cachedData.indicators;
 
   const inflSeries = [
     { key: "ipca12", name: "IPCA 12M" },
     { key: "igpm", name: "IGP-M" },
-    { key: "inpc", name: "INPC" },
     { key: "selic", name: "Selic" },
   ]
     .filter((s) => ind[s.key])
-    .map((s, i) => ({ name: s.name, color: SERIES_COLORS[i], points: ind[s.key].series }));
+    .map((s, i) => ({ name: s.name, color: SERIES_COLORS[i], points: filterPoints(ind[s.key].series, selectedRange) }));
 
   renderLegend(document.getElementById("infl-legend"), inflSeries);
   drawLineChart(document.getElementById("infl-chart"), inflSeries, { height: 280 });
@@ -178,14 +206,14 @@ async function loadDashboard() {
   if (ind.ibcbr) {
     drawLineChart(
       document.getElementById("ibc-chart"),
-      [{ name: "IBC-Br", color: SERIES_COLORS[0], points: ind.ibcbr.series }],
+      [{ name: "IBC-Br", color: SERIES_COLORS[0], points: filterPoints(ind.ibcbr.series, selectedRange) }],
       { height: 200 }
     );
   }
   if (ind.desemprego) {
     drawLineChart(
       document.getElementById("desemprego-chart"),
-      [{ name: "Desemprego", color: SERIES_COLORS[1], points: ind.desemprego.series }],
+      [{ name: "Desemprego", color: SERIES_COLORS[1], points: filterPoints(ind.desemprego.series, selectedRange) }],
       { height: 200 }
     );
   }
@@ -230,9 +258,30 @@ document.addEventListener("DOMContentLoaded", () => {
     if (value) searchTicker(value);
   });
 
+  document.querySelectorAll(".range-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const months = btn.dataset.months;
+      selectedRange = months === "all" ? { type: "all" } : { type: "preset", months: Number(months) };
+      document.getElementById("range-start").value = "";
+      document.getElementById("range-end").value = "";
+      document.querySelectorAll(".range-btn").forEach((b) => b.classList.toggle("active", b === btn));
+      renderCharts();
+    });
+  });
+
+  document.getElementById("range-form").addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    const start = document.getElementById("range-start").value;
+    const end = document.getElementById("range-end").value;
+    if (!start && !end) return;
+    selectedRange = { type: "custom", start, end };
+    document.querySelectorAll(".range-btn").forEach((b) => b.classList.remove("active"));
+    renderCharts();
+  });
+
   let resizeTimer;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => loadDashboard().catch(() => {}), 150);
+    resizeTimer = setTimeout(() => renderCharts(), 150);
   });
 });

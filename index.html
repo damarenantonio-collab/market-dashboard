@@ -26,10 +26,25 @@
 
     <div id="tiles" class="grid-tiles"></div>
 
+    <div class="range-filter">
+      <div class="range-presets">
+        <button type="button" class="range-btn" data-months="3">3M</button>
+        <button type="button" class="range-btn" data-months="6">6M</button>
+        <button type="button" class="range-btn" data-months="12">1A</button>
+        <button type="button" class="range-btn" data-months="36">3A</button>
+        <button type="button" class="range-btn active" data-months="all">Tudo</button>
+      </div>
+      <form id="range-form" class="range-custom">
+        <label>De <input id="range-start" type="date" /></label>
+        <label>Até <input id="range-end" type="date" /></label>
+        <button type="submit">Aplicar</button>
+      </form>
+    </div>
+
     <div class="charts-grid">
       <div class="card">
         <h3>Inflação e Juros</h3>
-        <div class="subtitle">IPCA 12M, IGP-M, INPC e Selic</div>
+        <div class="subtitle">IPCA 12M, IGP-M e Selic</div>
         <div id="infl-legend" class="legend"></div>
         <div class="chart-box">
           <div id="infl-chart"></div>

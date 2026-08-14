@@ -6,7 +6,6 @@
 //   12    Taxa de juros - CDI, diária (% a.d.) — anualizada aqui (base 252) para comparar com a Selic
 //   13522 IPCA - acumulado em 12 meses (%)
 //   189   IGP-M - variação mensal (%)
-//   188   INPC - variação mensal (%)
 //   24363 IBC-Br - índice (não dessazonalizado)
 //   24369 Taxa de desocupação - PNAD Contínua (%)
 //   1     Dólar americano (venda) - PTAX (R$)
@@ -24,7 +23,6 @@ const INDICATORS = [
   { key: "cdi", name: "CDI Anual", code: 12, unit: "% a.a.", history: 1095, annualizeFromDaily: true },
   { key: "ipca12", name: "IPCA 12M", code: 13522, unit: "%", history: 1825 },
   { key: "igpm", name: "IGP-M", code: 189, unit: "%", history: 1825 },
-  { key: "inpc", name: "INPC", code: 188, unit: "%", history: 1825 },
   { key: "ibcbr", name: "IBC-Br", code: 24363, unit: "índice", history: 1825 },
   { key: "desemprego", name: "Desemprego", code: 24369, unit: "%", history: 1825 },
   { key: "dolar", name: "Cotação do dólar", code: 1, unit: "R$", history: 1095 },
