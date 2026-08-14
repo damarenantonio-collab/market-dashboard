@@ -13,7 +13,7 @@ const CSV_URL =
 const DATA_PATH = path.join(__dirname, "..", "data", "ntnb.json");
 
 // Anos de vencimento que queremos acompanhar.
-const TARGET_YEARS = [2037, 2050];
+const TARGET_YEARS = [2035, 2050];
 
 function normHeader(s) {
   return s
