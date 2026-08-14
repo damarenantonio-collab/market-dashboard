@@ -1,0 +1,9 @@
+{
+  "name": "market-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Painel de indicadores macroeconômicos do Brasil, atualizado diariamente via GitHub Actions",
+  "scripts": {
+    "update-data": "node scripts/fetch-data.js"
+  }
+}
