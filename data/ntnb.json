@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T10:17:35.727Z",
+  "updatedAt": "2026-08-20T10:18:25.151Z",
   "bonds": {
     "ntnb2035": {
       "key": "ntnb2035",
@@ -5318,13 +5318,13 @@
         },
         {
           "date": "2010-05-11",
-          "taxaCompra": 6.38,
-          "taxaVenda": 6.48
+          "taxaCompra": 6.24,
+          "taxaVenda": 6.34
         },
         {
           "date": "2010-05-11",
-          "taxaCompra": 6.24,
-          "taxaVenda": 6.34
+          "taxaCompra": 6.38,
+          "taxaVenda": 6.48
         },
         {
           "date": "2010-05-12",
@@ -5578,13 +5578,13 @@
         },
         {
           "date": "2010-06-17",
-          "taxaCompra": 6.26,
-          "taxaVenda": 6.36
+          "taxaCompra": 6.3,
+          "taxaVenda": 6.4
         },
         {
           "date": "2010-06-17",
-          "taxaCompra": 6.3,
-          "taxaVenda": 6.4
+          "taxaCompra": 6.26,
+          "taxaVenda": 6.36
         },
         {
           "date": "2010-06-18",
@@ -6148,13 +6148,13 @@
         },
         {
           "date": "2010-09-06",
-          "taxaCompra": 5.97,
-          "taxaVenda": 6.07
+          "taxaCompra": 5.96,
+          "taxaVenda": 6.06
         },
         {
           "date": "2010-09-06",
-          "taxaCompra": 5.96,
-          "taxaVenda": 6.06
+          "taxaCompra": 5.97,
+          "taxaVenda": 6.07
         },
         {
           "date": "2010-09-08",
@@ -6568,13 +6568,13 @@
         },
         {
           "date": "2010-11-08",
-          "taxaCompra": 5.76,
-          "taxaVenda": 5.86
+          "taxaCompra": 5.67,
+          "taxaVenda": 5.77
         },
         {
           "date": "2010-11-08",
-          "taxaCompra": 5.67,
-          "taxaVenda": 5.77
+          "taxaCompra": 5.76,
+          "taxaVenda": 5.86
         },
         {
           "date": "2010-11-09",
@@ -7298,13 +7298,13 @@
         },
         {
           "date": "2011-02-18",
-          "taxaCompra": 5.74,
-          "taxaVenda": 5.84
+          "taxaCompra": 5.89,
+          "taxaVenda": 5.99
         },
         {
           "date": "2011-02-18",
-          "taxaCompra": 5.89,
-          "taxaVenda": 5.99
+          "taxaCompra": 5.74,
+          "taxaVenda": 5.84
         },
         {
           "date": "2011-02-21",
@@ -7398,13 +7398,13 @@
         },
         {
           "date": "2011-03-04",
-          "taxaCompra": 5.93,
-          "taxaVenda": 6.03
+          "taxaCompra": 5.71,
+          "taxaVenda": 5.81
         },
         {
           "date": "2011-03-04",
-          "taxaCompra": 5.71,
-          "taxaVenda": 5.81
+          "taxaCompra": 5.93,
+          "taxaVenda": 6.03
         },
         {
           "date": "2011-03-09",
@@ -7878,13 +7878,13 @@
         },
         {
           "date": "2011-05-23",
-          "taxaCompra": 5.57,
-          "taxaVenda": 5.67
+          "taxaCompra": 5.83,
+          "taxaVenda": 5.93
         },
         {
           "date": "2011-05-23",
-          "taxaCompra": 5.83,
-          "taxaVenda": 5.93
+          "taxaCompra": 5.57,
+          "taxaVenda": 5.67
         },
         {
           "date": "2011-05-24",
@@ -7918,13 +7918,13 @@
         },
         {
           "date": "2011-05-27",
-          "taxaCompra": 5.86,
-          "taxaVenda": 5.96
+          "taxaCompra": 5.59,
+          "taxaVenda": 5.69
         },
         {
           "date": "2011-05-27",
-          "taxaCompra": 5.59,
-          "taxaVenda": 5.69
+          "taxaCompra": 5.86,
+          "taxaVenda": 5.96
         },
         {
           "date": "2011-05-30",
@@ -9328,13 +9328,13 @@
         },
         {
           "date": "2011-12-19",
-          "taxaCompra": 5.5,
-          "taxaVenda": 5.6
+          "taxaCompra": 5.56,
+          "taxaVenda": 5.66
         },
         {
           "date": "2011-12-19",
-          "taxaCompra": 5.56,
-          "taxaVenda": 5.66
+          "taxaCompra": 5.5,
+          "taxaVenda": 5.6
         },
         {
           "date": "2011-12-20",
@@ -9398,13 +9398,13 @@
         },
         {
           "date": "2011-12-28",
-          "taxaCompra": 5.55,
-          "taxaVenda": 5.65
+          "taxaCompra": 5.58,
+          "taxaVenda": 5.68
         },
         {
           "date": "2011-12-28",
-          "taxaCompra": 5.58,
-          "taxaVenda": 5.68
+          "taxaCompra": 5.55,
+          "taxaVenda": 5.65
         },
         {
           "date": "2011-12-29",
@@ -9618,13 +9618,13 @@
         },
         {
           "date": "2012-01-27",
-          "taxaCompra": 5.43,
-          "taxaVenda": 5.53
+          "taxaCompra": 5.45,
+          "taxaVenda": 5.55
         },
         {
           "date": "2012-01-27",
-          "taxaCompra": 5.45,
-          "taxaVenda": 5.55
+          "taxaCompra": 5.43,
+          "taxaVenda": 5.53
         },
         {
           "date": "2012-01-30",
@@ -10048,13 +10048,13 @@
         },
         {
           "date": "2012-03-30",
-          "taxaCompra": 5.24,
-          "taxaVenda": 5.34
+          "taxaCompra": 5.16,
+          "taxaVenda": 5.26
         },
         {
           "date": "2012-03-30",
-          "taxaCompra": 5.16,
-          "taxaVenda": 5.26
+          "taxaCompra": 5.24,
+          "taxaVenda": 5.34
         },
         {
           "date": "2012-04-02",
@@ -11178,13 +11178,13 @@
         },
         {
           "date": "2012-09-11",
-          "taxaCompra": 4.35,
-          "taxaVenda": 4.45
+          "taxaCompra": 4.23,
+          "taxaVenda": 4.33
         },
         {
           "date": "2012-09-11",
-          "taxaCompra": 4.23,
-          "taxaVenda": 4.33
+          "taxaCompra": 4.35,
+          "taxaVenda": 4.45
         },
         {
           "date": "2012-09-12",
@@ -14238,13 +14238,13 @@
         },
         {
           "date": "2013-12-04",
-          "taxaCompra": 6.68,
-          "taxaVenda": 6.78
+          "taxaCompra": 6.78,
+          "taxaVenda": 6.88
         },
         {
           "date": "2013-12-04",
-          "taxaCompra": 6.78,
-          "taxaVenda": 6.88
+          "taxaCompra": 6.68,
+          "taxaVenda": 6.78
         },
         {
           "date": "2013-12-05",
@@ -17978,13 +17978,13 @@
         },
         {
           "date": "2015-06-02",
-          "taxaCompra": 5.96,
-          "taxaVenda": 6.06
+          "taxaCompra": 5.9,
+          "taxaVenda": 6
         },
         {
           "date": "2015-06-02",
-          "taxaCompra": 5.9,
-          "taxaVenda": 6
+          "taxaCompra": 5.96,
+          "taxaVenda": 6.06
         },
         {
           "date": "2015-06-03",
@@ -19148,13 +19148,13 @@
         },
         {
           "date": "2015-11-18",
-          "taxaCompra": 6.87,
-          "taxaVenda": 6.95
+          "taxaCompra": 6.85,
+          "taxaVenda": 6.93
         },
         {
           "date": "2015-11-18",
-          "taxaCompra": 6.85,
-          "taxaVenda": 6.93
+          "taxaCompra": 6.87,
+          "taxaVenda": 6.95
         },
         {
           "date": "2015-11-19",
@@ -19408,13 +19408,13 @@
         },
         {
           "date": "2015-12-24",
-          "taxaCompra": 7.37,
-          "taxaVenda": 7.45
+          "taxaCompra": 7.41,
+          "taxaVenda": 7.49
         },
         {
           "date": "2015-12-24",
-          "taxaCompra": 7.41,
-          "taxaVenda": 7.49
+          "taxaCompra": 7.37,
+          "taxaVenda": 7.45
         },
         {
           "date": "2015-12-28",
@@ -20008,13 +20008,13 @@
         },
         {
           "date": "2016-03-23",
-          "taxaCompra": 6.23,
-          "taxaVenda": 6.31
+          "taxaCompra": 6.29,
+          "taxaVenda": 6.37
         },
         {
           "date": "2016-03-23",
-          "taxaCompra": 6.29,
-          "taxaVenda": 6.37
+          "taxaCompra": 6.23,
+          "taxaVenda": 6.31
         },
         {
           "date": "2016-03-24",
@@ -21748,13 +21748,13 @@
         },
         {
           "date": "2016-12-02",
-          "taxaCompra": 6.32,
-          "taxaVenda": 6.4
+          "taxaCompra": 6.33,
+          "taxaVenda": 6.41
         },
         {
           "date": "2016-12-02",
-          "taxaCompra": 6.33,
-          "taxaVenda": 6.41
+          "taxaCompra": 6.32,
+          "taxaVenda": 6.4
         },
         {
           "date": "2016-12-05",
@@ -26188,13 +26188,13 @@
         },
         {
           "date": "2018-09-18",
-          "taxaCompra": 5.92,
-          "taxaVenda": 6.04
+          "taxaCompra": 5.85,
+          "taxaVenda": 5.97
         },
         {
           "date": "2018-09-18",
-          "taxaCompra": 5.85,
-          "taxaVenda": 5.97
+          "taxaCompra": 5.92,
+          "taxaVenda": 6.04
         },
         {
           "date": "2018-09-19",
@@ -29468,13 +29468,13 @@
         },
         {
           "date": "2020-01-14",
-          "taxaCompra": 3.29,
-          "taxaVenda": 3.41
+          "taxaCompra": 3.44,
+          "taxaVenda": 3.56
         },
         {
           "date": "2020-01-14",
-          "taxaCompra": 3.44,
-          "taxaVenda": 3.56
+          "taxaCompra": 3.29,
+          "taxaVenda": 3.41
         },
         {
           "date": "2020-01-15",
@@ -30428,13 +30428,13 @@
         },
         {
           "date": "2020-06-03",
-          "taxaCompra": 4.16,
-          "taxaVenda": 4.28
+          "taxaCompra": 3.84,
+          "taxaVenda": 3.96
         },
         {
           "date": "2020-06-03",
-          "taxaCompra": 3.84,
-          "taxaVenda": 3.96
+          "taxaCompra": 4.16,
+          "taxaVenda": 4.28
         },
         {
           "date": "2020-06-04",
@@ -32088,13 +32088,13 @@
         },
         {
           "date": "2021-02-03",
-          "taxaCompra": 3.38,
-          "taxaVenda": 3.5
+          "taxaCompra": 3.57,
+          "taxaVenda": 3.69
         },
         {
           "date": "2021-02-03",
-          "taxaCompra": 3.57,
-          "taxaVenda": 3.69
+          "taxaCompra": 3.38,
+          "taxaVenda": 3.5
         },
         {
           "date": "2021-02-04",
@@ -34828,13 +34828,13 @@
         },
         {
           "date": "2022-03-14",
-          "taxaCompra": 5.9,
-          "taxaVenda": 6.02
+          "taxaCompra": 5.88,
+          "taxaVenda": 6
         },
         {
           "date": "2022-03-14",
-          "taxaCompra": 5.88,
-          "taxaVenda": 6
+          "taxaCompra": 5.9,
+          "taxaVenda": 6.02
         },
         {
           "date": "2022-03-15",
@@ -34928,13 +34928,13 @@
         },
         {
           "date": "2022-03-28",
-          "taxaCompra": 5.32,
-          "taxaVenda": 5.44
+          "taxaCompra": 5.37,
+          "taxaVenda": 5.49
         },
         {
           "date": "2022-03-28",
-          "taxaCompra": 5.37,
-          "taxaVenda": 5.49
+          "taxaCompra": 5.32,
+          "taxaVenda": 5.44
         },
         {
           "date": "2022-03-29",
@@ -35918,13 +35918,13 @@
         },
         {
           "date": "2022-08-17",
-          "taxaCompra": 5.84,
-          "taxaVenda": 5.96
+          "taxaCompra": 5.86,
+          "taxaVenda": 5.98
         },
         {
           "date": "2022-08-17",
-          "taxaCompra": 5.86,
-          "taxaVenda": 5.98
+          "taxaCompra": 5.84,
+          "taxaVenda": 5.96
         },
         {
           "date": "2022-08-18",
@@ -36978,13 +36978,13 @@
         },
         {
           "date": "2023-01-19",
-          "taxaCompra": 6.3,
-          "taxaVenda": 6.42
+          "taxaCompra": 6.33,
+          "taxaVenda": 6.45
         },
         {
           "date": "2023-01-19",
-          "taxaCompra": 6.33,
-          "taxaVenda": 6.45
+          "taxaCompra": 6.3,
+          "taxaVenda": 6.42
         },
         {
           "date": "2023-01-20",
@@ -37338,13 +37338,13 @@
         },
         {
           "date": "2023-03-14",
-          "taxaCompra": 6.36,
-          "taxaVenda": 6.48
+          "taxaCompra": 6.27,
+          "taxaVenda": 6.39
         },
         {
           "date": "2023-03-14",
-          "taxaCompra": 6.27,
-          "taxaVenda": 6.39
+          "taxaCompra": 6.36,
+          "taxaVenda": 6.48
         },
         {
           "date": "2023-03-15",
@@ -39938,13 +39938,13 @@
         },
         {
           "date": "2024-04-01",
-          "taxaCompra": 5.86,
-          "taxaVenda": 5.98
+          "taxaCompra": 5.84,
+          "taxaVenda": 5.96
         },
         {
           "date": "2024-04-01",
-          "taxaCompra": 5.84,
-          "taxaVenda": 5.96
+          "taxaCompra": 5.86,
+          "taxaVenda": 5.98
         },
         {
           "date": "2024-04-02",
@@ -39978,13 +39978,13 @@
         },
         {
           "date": "2024-04-05",
-          "taxaCompra": 5.87,
-          "taxaVenda": 5.99
+          "taxaCompra": 5.89,
+          "taxaVenda": 6.01
         },
         {
           "date": "2024-04-05",
-          "taxaCompra": 5.89,
-          "taxaVenda": 6.01
+          "taxaCompra": 5.87,
+          "taxaVenda": 5.99
         },
         {
           "date": "2024-04-08",
@@ -41508,13 +41508,13 @@
         },
         {
           "date": "2024-11-08",
-          "taxaCompra": 6.63,
-          "taxaVenda": 6.75
+          "taxaCompra": 6.65,
+          "taxaVenda": 6.77
         },
         {
           "date": "2024-11-08",
-          "taxaCompra": 6.65,
-          "taxaVenda": 6.77
+          "taxaCompra": 6.63,
+          "taxaVenda": 6.75
         },
         {
           "date": "2024-11-11",
@@ -41998,13 +41998,13 @@
         },
         {
           "date": "2025-01-24",
-          "taxaCompra": 7.83,
-          "taxaVenda": 7.95
+          "taxaCompra": 7.85,
+          "taxaVenda": 7.97
         },
         {
           "date": "2025-01-24",
-          "taxaCompra": 7.85,
-          "taxaVenda": 7.97
+          "taxaCompra": 7.83,
+          "taxaVenda": 7.95
         },
         {
           "date": "2025-01-27",
@@ -42338,13 +42338,13 @@
         },
         {
           "date": "2025-03-17",
-          "taxaCompra": 7.64,
-          "taxaVenda": 7.76
+          "taxaCompra": 7.61,
+          "taxaVenda": 7.73
         },
         {
           "date": "2025-03-17",
-          "taxaCompra": 7.61,
-          "taxaVenda": 7.73
+          "taxaCompra": 7.64,
+          "taxaVenda": 7.76
         },
         {
           "date": "2025-03-18",
@@ -44118,13 +44118,13 @@
         },
         {
           "date": "2025-11-27",
-          "taxaCompra": 7.16,
-          "taxaVenda": 7.28
+          "taxaCompra": 7.26,
+          "taxaVenda": 7.38
         },
         {
           "date": "2025-11-27",
-          "taxaCompra": 7.26,
-          "taxaVenda": 7.38
+          "taxaCompra": 7.16,
+          "taxaVenda": 7.28
         },
         {
           "date": "2025-11-28",
@@ -44508,13 +44508,13 @@
         },
         {
           "date": "2026-01-27",
-          "taxaCompra": 7.5,
-          "taxaVenda": 7.62
+          "taxaCompra": 7.56,
+          "taxaVenda": 7.68
         },
         {
           "date": "2026-01-27",
-          "taxaCompra": 7.56,
-          "taxaVenda": 7.68
+          "taxaCompra": 7.5,
+          "taxaVenda": 7.62
         },
         {
           "date": "2026-01-28",
@@ -45058,13 +45058,13 @@
         },
         {
           "date": "2026-04-17",
-          "taxaCompra": 7.33,
-          "taxaVenda": 7.45
+          "taxaCompra": 7.28,
+          "taxaVenda": 7.4
         },
         {
           "date": "2026-04-17",
-          "taxaCompra": 7.28,
-          "taxaVenda": 7.4
+          "taxaCompra": 7.33,
+          "taxaVenda": 7.45
         },
         {
           "date": "2026-04-20",
@@ -45368,13 +45368,13 @@
         },
         {
           "date": "2026-06-03",
-          "taxaCompra": 7.82,
-          "taxaVenda": 7.94
+          "taxaCompra": 7.76,
+          "taxaVenda": 7.88
         },
         {
           "date": "2026-06-03",
-          "taxaCompra": 7.76,
-          "taxaVenda": 7.88
+          "taxaCompra": 7.82,
+          "taxaVenda": 7.94
         },
         {
           "date": "2026-06-05",
@@ -45895,6 +45895,16 @@
           "date": "2026-08-17",
           "taxaCompra": 7.99,
           "taxaVenda": 8.11
+        },
+        {
+          "date": "2026-08-18",
+          "taxaCompra": 7.98,
+          "taxaVenda": 8.1
+        },
+        {
+          "date": "2026-08-18",
+          "taxaCompra": 7.96,
+          "taxaVenda": 8.08
         }
       ]
     },
@@ -62305,13 +62315,13 @@
         },
         {
           "date": "2025-05-06",
-          "taxaCompra": 7.28,
-          "taxaVenda": 7.4
+          "taxaCompra": 7.13,
+          "taxaVenda": 7.25
         },
         {
           "date": "2025-05-06",
-          "taxaCompra": 7.13,
-          "taxaVenda": 7.25
+          "taxaCompra": 7.28,
+          "taxaVenda": 7.4
         },
         {
           "date": "2025-05-07",
@@ -63435,13 +63445,13 @@
         },
         {
           "date": "2025-10-13",
-          "taxaCompra": 7.29,
-          "taxaVenda": 7.41
+          "taxaCompra": 7.06,
+          "taxaVenda": 7.18
         },
         {
           "date": "2025-10-13",
-          "taxaCompra": 7.06,
-          "taxaVenda": 7.18
+          "taxaCompra": 7.29,
+          "taxaVenda": 7.41
         },
         {
           "date": "2025-10-14",
@@ -63665,13 +63675,13 @@
         },
         {
           "date": "2025-11-13",
-          "taxaCompra": 7.01,
-          "taxaVenda": 7.13
+          "taxaCompra": 6.81,
+          "taxaVenda": 6.93
         },
         {
           "date": "2025-11-13",
-          "taxaCompra": 6.81,
-          "taxaVenda": 6.93
+          "taxaCompra": 7.01,
+          "taxaVenda": 7.13
         },
         {
           "date": "2025-11-14",
@@ -63785,23 +63795,23 @@
         },
         {
           "date": "2025-12-02",
-          "taxaCompra": 6.81,
-          "taxaVenda": 6.93
-        },
-        {
-          "date": "2025-12-02",
           "taxaCompra": 6.98,
           "taxaVenda": 7.1
         },
         {
-          "date": "2025-12-03",
-          "taxaCompra": 6.93,
-          "taxaVenda": 7.05
+          "date": "2025-12-02",
+          "taxaCompra": 6.81,
+          "taxaVenda": 6.93
         },
         {
           "date": "2025-12-03",
           "taxaCompra": 6.77,
           "taxaVenda": 6.89
+        },
+        {
+          "date": "2025-12-03",
+          "taxaCompra": 6.93,
+          "taxaVenda": 7.05
         },
         {
           "date": "2025-12-04",
@@ -63825,13 +63835,13 @@
         },
         {
           "date": "2025-12-08",
-          "taxaCompra": 7.01,
-          "taxaVenda": 7.13
+          "taxaCompra": 6.88,
+          "taxaVenda": 7
         },
         {
           "date": "2025-12-08",
-          "taxaCompra": 6.88,
-          "taxaVenda": 7
+          "taxaCompra": 7.01,
+          "taxaVenda": 7.13
         },
         {
           "date": "2025-12-09",
@@ -64235,13 +64245,13 @@
         },
         {
           "date": "2026-02-09",
-          "taxaCompra": 7.01,
-          "taxaVenda": 7.13
+          "taxaCompra": 7.21,
+          "taxaVenda": 7.33
         },
         {
           "date": "2026-02-09",
-          "taxaCompra": 7.21,
-          "taxaVenda": 7.33
+          "taxaCompra": 7.01,
+          "taxaVenda": 7.13
         },
         {
           "date": "2026-02-10",
@@ -64695,13 +64705,13 @@
         },
         {
           "date": "2026-04-17",
-          "taxaCompra": 6.97,
-          "taxaVenda": 7.09
+          "taxaCompra": 6.79,
+          "taxaVenda": 6.91
         },
         {
           "date": "2026-04-17",
-          "taxaCompra": 6.79,
-          "taxaVenda": 6.91
+          "taxaCompra": 6.97,
+          "taxaVenda": 7.09
         },
         {
           "date": "2026-04-20",
@@ -64895,13 +64905,13 @@
         },
         {
           "date": "2026-05-19",
-          "taxaCompra": 7.05,
-          "taxaVenda": 7.17
+          "taxaCompra": 7.27,
+          "taxaVenda": 7.39
         },
         {
           "date": "2026-05-19",
-          "taxaCompra": 7.27,
-          "taxaVenda": 7.39
+          "taxaCompra": 7.05,
+          "taxaVenda": 7.17
         },
         {
           "date": "2026-05-20",
@@ -65005,13 +65015,13 @@
         },
         {
           "date": "2026-06-03",
-          "taxaCompra": 7.35,
-          "taxaVenda": 7.47
+          "taxaCompra": 7.12,
+          "taxaVenda": 7.24
         },
         {
           "date": "2026-06-03",
-          "taxaCompra": 7.12,
-          "taxaVenda": 7.24
+          "taxaCompra": 7.35,
+          "taxaVenda": 7.47
         },
         {
           "date": "2026-06-05",
@@ -65455,13 +65465,13 @@
         },
         {
           "date": "2026-08-06",
-          "taxaCompra": 7.61,
-          "taxaVenda": 7.73
+          "taxaCompra": 7.43,
+          "taxaVenda": 7.55
         },
         {
           "date": "2026-08-06",
-          "taxaCompra": 7.43,
-          "taxaVenda": 7.55
+          "taxaCompra": 7.61,
+          "taxaVenda": 7.73
         },
         {
           "date": "2026-08-07",
@@ -65532,6 +65542,16 @@
           "date": "2026-08-17",
           "taxaCompra": 7.35,
           "taxaVenda": 7.47
+        },
+        {
+          "date": "2026-08-18",
+          "taxaCompra": 7.51,
+          "taxaVenda": 7.63
+        },
+        {
+          "date": "2026-08-18",
+          "taxaCompra": 7.31,
+          "taxaVenda": 7.43
         }
       ]
     }
