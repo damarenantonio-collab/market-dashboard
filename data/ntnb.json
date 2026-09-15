@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T16:01:58.384Z",
+  "updatedAt": "2026-09-15T14:32:21.779Z",
   "bonds": {
     "ntnb2035": {
       "key": "ntnb2035",
@@ -46065,6 +46065,26 @@
           "date": "2026-09-10",
           "taxaCompra": 7.64,
           "taxaVenda": 7.76
+        },
+        {
+          "date": "2026-09-11",
+          "taxaCompra": 7.49,
+          "taxaVenda": 7.61
+        },
+        {
+          "date": "2026-09-11",
+          "taxaCompra": 7.48,
+          "taxaVenda": 7.6
+        },
+        {
+          "date": "2026-09-14",
+          "taxaCompra": 7.58,
+          "taxaVenda": 7.7
+        },
+        {
+          "date": "2026-09-14",
+          "taxaCompra": 7.58,
+          "taxaVenda": 7.7
         }
       ]
     },
@@ -65872,6 +65892,26 @@
           "date": "2026-09-10",
           "taxaCompra": 7.36,
           "taxaVenda": 7.48
+        },
+        {
+          "date": "2026-09-11",
+          "taxaCompra": 7.28,
+          "taxaVenda": 7.4
+        },
+        {
+          "date": "2026-09-11",
+          "taxaCompra": 7.22,
+          "taxaVenda": 7.34
+        },
+        {
+          "date": "2026-09-14",
+          "taxaCompra": 7.37,
+          "taxaVenda": 7.49
+        },
+        {
+          "date": "2026-09-14",
+          "taxaCompra": 7.3,
+          "taxaVenda": 7.42
         }
       ]
     }
