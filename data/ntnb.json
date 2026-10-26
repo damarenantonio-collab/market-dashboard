@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T13:42:45.615Z",
+  "updatedAt": "2026-10-26T16:21:06.261Z",
   "bonds": {
     "ntnb2035": {
       "key": "ntnb2035",
@@ -46305,6 +46305,66 @@
           "date": "2026-10-15",
           "taxaCompra": 6.84,
           "taxaVenda": 6.96
+        },
+        {
+          "date": "2026-10-16",
+          "taxaCompra": 6.83,
+          "taxaVenda": 6.95
+        },
+        {
+          "date": "2026-10-16",
+          "taxaCompra": 6.84,
+          "taxaVenda": 6.96
+        },
+        {
+          "date": "2026-10-19",
+          "taxaCompra": 6.8,
+          "taxaVenda": 6.92
+        },
+        {
+          "date": "2026-10-19",
+          "taxaCompra": 6.81,
+          "taxaVenda": 6.93
+        },
+        {
+          "date": "2026-10-20",
+          "taxaCompra": 6.83,
+          "taxaVenda": 6.95
+        },
+        {
+          "date": "2026-10-20",
+          "taxaCompra": 6.85,
+          "taxaVenda": 6.97
+        },
+        {
+          "date": "2026-10-21",
+          "taxaCompra": 6.79,
+          "taxaVenda": 6.91
+        },
+        {
+          "date": "2026-10-21",
+          "taxaCompra": 6.81,
+          "taxaVenda": 6.93
+        },
+        {
+          "date": "2026-10-22",
+          "taxaCompra": 6.84,
+          "taxaVenda": 6.96
+        },
+        {
+          "date": "2026-10-22",
+          "taxaCompra": 6.86,
+          "taxaVenda": 6.98
+        },
+        {
+          "date": "2026-10-23",
+          "taxaCompra": 6.75,
+          "taxaVenda": 6.87
+        },
+        {
+          "date": "2026-10-23",
+          "taxaCompra": 6.76,
+          "taxaVenda": 6.88
         }
       ]
     },
@@ -66352,6 +66412,66 @@
           "date": "2026-10-15",
           "taxaCompra": 6.74,
           "taxaVenda": 6.86
+        },
+        {
+          "date": "2026-10-16",
+          "taxaCompra": 6.76,
+          "taxaVenda": 6.88
+        },
+        {
+          "date": "2026-10-16",
+          "taxaCompra": 6.74,
+          "taxaVenda": 6.86
+        },
+        {
+          "date": "2026-10-19",
+          "taxaCompra": 6.7,
+          "taxaVenda": 6.82
+        },
+        {
+          "date": "2026-10-19",
+          "taxaCompra": 6.66,
+          "taxaVenda": 6.78
+        },
+        {
+          "date": "2026-10-20",
+          "taxaCompra": 6.73,
+          "taxaVenda": 6.85
+        },
+        {
+          "date": "2026-10-20",
+          "taxaCompra": 6.7,
+          "taxaVenda": 6.82
+        },
+        {
+          "date": "2026-10-21",
+          "taxaCompra": 6.7,
+          "taxaVenda": 6.82
+        },
+        {
+          "date": "2026-10-21",
+          "taxaCompra": 6.68,
+          "taxaVenda": 6.8
+        },
+        {
+          "date": "2026-10-22",
+          "taxaCompra": 6.68,
+          "taxaVenda": 6.8
+        },
+        {
+          "date": "2026-10-22",
+          "taxaCompra": 6.63,
+          "taxaVenda": 6.75
+        },
+        {
+          "date": "2026-10-23",
+          "taxaCompra": 6.55,
+          "taxaVenda": 6.67
+        },
+        {
+          "date": "2026-10-23",
+          "taxaCompra": 6.48,
+          "taxaVenda": 6.6
         }
       ]
     }
